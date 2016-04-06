@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: MintCream;
+}
+
+  h1{
+    text-decoration: underline;
+  }
+
+  select{
+    margin-bottom: 20px;
+  }
+
+  .boardSpace{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+  }
+  .blackSquare{
+    background-color: black;
+  }
+
+  .whiteSquare{
+    background-color: white;
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+
+  tr, td{
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+
+<h1> Game Board </h1>
+
+<span>Select Squares: </span>
+<select>
+<option value="2">2x2</option>
+<option value="3">3x3</option>
+<option value="4">4x4</option>
+<option value="5">5x5</option>
+<option value="6">6x6</option>
+<option value="7">7x7</option>
+<option selected='selected' value="8">8x8</option>
+</select>
+
+<table id="gameBoard" style='border: 8px solid aqua' align='center'>
+
+</table>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="main.js"></script>
+
+</body>
